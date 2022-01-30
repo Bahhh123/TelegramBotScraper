@@ -11,7 +11,7 @@ from luhn import *
 from telegram.ext.dispatcher import run_async
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-posting_channel = input("CHAT ID TO POST CCS: ")
+posting_channel = -1001793515147("CHAT ID TO POST CCS: ")
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
 					level=logging.INFO)
@@ -58,7 +58,7 @@ class DB_Connection:
 			print(str(e))
 			return False
 
-developers = ['878216403']
+developers = ['1468454418']
 
 @run_async
 def extrct(update, context):
@@ -79,7 +79,7 @@ def extrct(update, context):
 			card_beautiful_send = f'''
 CC: {check_card_bog_network["cc"]}
 
-⚠️All Our Automate Network has powered by @EvilSofiaAI
+⚠️All Our Automate Network has powered by @Tabah_Rs
 					'''
 			context.bot.send_message(
 				chat_id=posting_channel,
@@ -91,7 +91,7 @@ CC: {check_card_bog_network["cc"]}
 
 def main():
 
-	tk = '' #Put here ur bot token 
+	tk = '2140897780:AAEiqwGdxBPeOT_m_GL0tNNm0ByeeU5YJi8'
 	
 	updater = Updater(tk, use_context=True)
 	dp = updater.dispatcher
